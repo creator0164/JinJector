@@ -1,0 +1,6 @@
+javascript: (() => {
+    var script = document.createElement('script');
+    script.innerHTML = "alert('hacked')";
+    document.body.appendChild(script);
+    script.onload = (() => eruda.init());
+})()
